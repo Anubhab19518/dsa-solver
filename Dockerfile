@@ -4,7 +4,6 @@
 FROM docker:latest
 
 # Step 2: Install system-level build tools, including C and Rust compilers.
-# This is the updated line that adds rust and cargo.
 RUN apk add --no-cache build-base python3-dev py3-pip rust cargo
 
 # Step 3: Set the working directory inside the container.
@@ -12,7 +11,8 @@ WORKDIR /app
 
 # Step 4: Copy and install your Python dependencies.
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Add the --break-system-packages flag to bypass the new safety check.
+RUN pip install --no-cache-dir --break-system-packages -r requirements.txt
 
 # Step 5: Copy the rest of your application code into the container.
 COPY . .
