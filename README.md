@@ -115,7 +115,3 @@ Your application should now be running! Open your web browser and navigate to **
 4.  Watch as the AI agents collaborate to provide a plan, code, and execution results in real-time.
 
 ---
-
-## ## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
