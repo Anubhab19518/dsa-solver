@@ -2,7 +2,7 @@
 
 AlgoGenie is an advanced application that leverages a multi-agent AI system built with Microsoft's AutoGen to solve complex Data Structures and Algorithms (DSA) problems. It's not just a code generator; it's a conversational AI team that plans, codes, executes, and explains solutions, simulating a collaborative problem-solving process.
 
-This project is designed to run in a containerized environment and is deployed on **Render**.
+This project is designed to run in a containerized environment.
 
 
 
